@@ -16,9 +16,9 @@
 <h1><span th:inline="none">[[...]] vs [(...)]</span></h1>
 
 <ul>
- <li><span th:inline="none">[[...]] = </span>[[${data}]]</li>
+ <li><span th:inline="none">[[...]] = </span>[[${data}]]</li> <!--unescaped-> 테그 안에서 해석을 못해 HTML이 정상 렌더링이 안됨-->
  <li><span th:inline="none">[(...)] = </span>[(${data})]</li>
 </ul>
 
 </body>
-</html>
+</html>  
